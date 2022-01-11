@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maharashtra | Panhala Fort</title>
+
+    <!-- !====== CSS ========== -->
+    <link rel="stylesheet" href="../styles/css/children-pages.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+
+    <!-- !========= Scripts =============== -->
+    <script src="../scripts/navbar.js" defer></script>
+    <script src="../scripts/img-scroll.js" defer></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin="" defer></script>
+    <script src="../scripts/maps.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <h1>Maharashtra</h1>
+            <ul>
+                <li>
+                    <a href="#">home</a>
+                </li>
+                <li>
+                    <a href="#">places</a>
+                </li>
+                <li>
+                    <a href="#">placeholder</a>
+                </li>
+            </ul>
+        </nav>
+        <figure class="place--fig">
+            <div class="place--imgs" style="width: 100%; display: flex">
+                <button id="left-btn" class="btn arrow-btn">&#8592;</button>
+                <button id="right-btn" class="btn arrow-btn">&#8594;</button>
+                <picture>
+                    <source media="(max-width: 500px)" srcset="../images/Panhala-fort/Shaniwar wada - 1.jpg" />
+                    <source media="(max-width: 2000px)" srcset="../images/Panhala-fort/Shaniwar wada - 2.jpg" />
+                    <img src="../images/Kumarakom – A glimpse of paradise11/Kumarakom – A glimpse of paradise2.jpeg" alt="fort" class="place--img" data-index="0" />
+                </picture>
+
+                <picture>
+                    <source media="(max-width: 500px)" srcset="../images/Panhala-fort/Shanivar-Wada - 1.jpg" />
+                    <source media="(max-width: 2000px)" srcset="../images/Panhala-fort/Shanivar-Wada - 2.jpg" />
+                    <img src="../images/Kumarakom – A glimpse of paradise11/Kumarakom – A glimpse of paradise1.jpeg" alt="fort" class="place--img" data-index="1" />
+                </picture>
+
+                <picture>
+                    <source media="(max-width: 500px)" srcset="../images/Panhala-fort/Shaniwar--Wada - 1.jpg" />
+                    <source media="(max-width: 2000px)" srcset="../images/Panhala-fort/Shaniwar--Wada - 2.jpg" />
+                    <img src="../images/Kumarakom – A glimpse of paradise11/Kumarakom – A glimpse of paradise.jpeg" alt="fort" class="place--img" data-index="2" />
+                </picture>
+            </div>
+            <figcaption class="place--name">
+                <h1>Kumarakom – A glimpse of paradise</h1>
+            </figcaption>
+        </figure>
+    </header>
+
+    <!-- !===== Place Description ======= -->
+    <section class="place--description">
+        <article class="place--history">
+            <!-- <h2>history</h2> -->
+            <br><br>
+            <p> 
+                Kumarakom – an entrancing backwater destination – offers unworldly natural beauty and charm. Comprising of island clusters surrounding the Vembanad Lake, this picturesque tourist spot is a perfect paradise for nature enthusiasts and a treat to the eyes for ornithologists. In addition to the numerous places to visit in Kumarakom, the city also has some absolutely pleasant activities including boating, angling, strolling, and quick & short treks.
+<br><br>
+                These super cool activities for families, couples, and friends are some of the best ways to chill out. Besides the unparalleled beauty of Kumarakom, these activities make it one of the most visited destinations in the God’s own country. How much one can indulge in depends on the duration of stay. But even during a short and crisp vacation, one can plan and extract the maximum fun of this pristine backwater scene. <br><br>
+               <br><br> How To Reach Kumarakom? <br><br>
+ <b> By Air</b><br><br>
+Cochin International Airport, located 85 km from Kumarakom, is the nearest airport that is well connected to the other cities of the country as well as the world.<br><br>
+<br><br>
+ <b>By Rail</b> <br><br>
+Kottayam Railway Station, located 16 km from Kumarakom, is the nearest railway station.
+<br><br>
+ <b>By Bus</b> <br><br>
+There are regular buses of KSRTC (Kerala State Run Transport Corporation) plying between Kumarakom and Kottayam. Located 16 km from Kumarakom, Kottayam is further well connected to the cities of South India by bus.
+<br><br>
+ <b>By Water</b> <br><br>
+State-run boats and private ferries across the Vembanad Lake are available from Muhamma, a small town located near Alleppey.
+
+
+                
+                <br><br>
+			
+            <br /> <br>
+        </article>
+        <br />
+    </section>
+
+    <!-- !============ Map Element ============== -->
+    <article id="map--parent" data-lat="16.81151438461097" data-lng="74.10192883650777">
+        <h2>MAP</h2> <br>
+        <a href="https://goo.gl/maps/XXMe3JyRspCd9Yjo9" class="btn">Goto GMaps</a>
+        <section id="map"></section>
+    </article>
+
+    <!-- !============ Major Features ============== -->
+    <section class="place--description">
+        <!-- <article class="place--features">
+            <h2>Major Features</h2>
+            <br />
+            <h3>Things to See in the Shaniwar Wada!</h3> <br>
+            <p>
+
+                <h3> The ruined complex of Shaniwar Wada has many attractions to keep visitors enthralled, including the following:</h3> <br>
+                <p> 1.Dilli Darwaza or Dilli Gate, the main gate of the fortified palace Mastani Darwaja aka Mastani Gate or Aliibahadur Darwaja, the gateway used by Mastani, the second wife of Baji Rao I, when traveling out of the palace complex. <br><br>2.
+                    Khidki Darwaja or Window Gate, named after the armored window contained there. <br> <br>3.Ganesh Darwaja or Ganesh Gate, near which existed the Ganesh Rang Maha <br> <br>4. Jambhul Darwaja or Narayan Darwaja aka Narayan’s Gate, used
+                    by concubines to access and leave the fortified premises Nine bastion towers. <br><br>5.Garden complex <br><br> 6.Hazari Karanje, the sixteen-petal lotus-shaped fountain A few surviving cannons <br> <br>7.The majestic statue of Baji
+                    Rao I that stands at the entrance of the palace
+                </p>
+
+
+            </p>
+        </article> -->
+    </section>
+
+    <!-- !========== Footer ============== -->
+
+    <footer>
+        <h1>
+            <span class="highlight">&#169; 2021</span> All the content on this page is copyrighted to <span class="highlight">placeholder</span>
+        </h1>
+    </footer>
+</body>
+
+</html>
